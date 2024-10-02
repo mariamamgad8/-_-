@@ -10,7 +10,7 @@ import PyPDF2
 #'rb' means we are reading the file in binary mode
 #'strict = false ' helps with potential error handling in the PDF reading 
 
-pdf_file=open(r"D:\Downloads\Alice In Wonderland.pdf" , 'rb')
+pdf_file=open(r"D:\Downloads\Alice In Wonderland.pdf" , 'rb') #replace it with your actual PDF path 
 reader= PyPDF2.PdfReader(pdf_file , strict=False )
 
 #count the number of pages in our chosen document 
