@@ -21,11 +21,11 @@ This repo contains 3 projects:
 **Usage:**
 
 1. **Hangman Game:**
-   - Run the `hangman.py` script.
+   - Run the `# Hangman in Python.py` script.
    - Follow the on-screen prompts to play the game.
 
 2. **PDF Text-to-Speech:**
-   - Run the `pdf_to_audio.py` script.
+   - Run the `Autmation with python (converting PDF to audiobook).py` script.
    - Provide the path to your PDF file as input.
    - The script will extract text from the PDF and convert it to audio.
 
