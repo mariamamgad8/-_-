@@ -1,49 +1,45 @@
 import pyttsx3  
-#pyttsx3 is a python library that convert text to speech
-# install it first "pip install pyttsx3"
 import PyPDF2
-#PyPDF2 is a python library that extracts text from a PDF
-# install it first "pip install PyPDF2"
 
+# Get the PDF path from the user
+pdf_path = input("Enter the path to the PDF file: ")
 
-#Read the PDF file 
-#'rb' means we are reading the file in binary mode
-#'strict = false ' helps with potential error handling in the PDF reading 
+# Read the PDF file
+pdf_file = open(pdf_path, 'rb')  # User provided path
+reader = PyPDF2.PdfReader(pdf_file)
 
-pdf_file=open(r"D:\Downloads\Alice In Wonderland.pdf" , 'rb')
-reader= PyPDF2.PdfReader(pdf_file , strict=False )
+# Count the number of pages in the document
+number_of_pages = len(reader.pages)
 
-#count the number of pages in our chosen document 
-number_of_pages= len(reader.pages)
+# Initialize pyttsx3 engine
+engine = pyttsx3.init()
 
-#init function to begin engine instance
-#iterate for loop over selected PDF pages 
+# Set audio speed and volume
+newspeed = 200  # Set the speed of the speech
+engine.setProperty('rate', newspeed)
 
-engine=pyttsx3.init()
+newvolume = 1.0  # Volume should be between 0.0 and 1.0
+engine.setProperty('volume', newvolume)
 
-for i in range (0, number_of_pages):
+# Variable to store the full text of the PDF
+full_text = ""
 
+# Iterate over all pages and extract text
+for i in range(number_of_pages):
     page = reader.pages[i]
-  
-    #extract the text from the selected pdf page 
-    page_content=page.extract_text()
+    page_content = page.extract_text()
+    full_text += page_content
 
-    #set the audio speed and volume 
-    newspeed= 200
-    engine.setProperty('rate' , newspeed)
+# Speak the text (optional)
+engine.say(full_text)
 
-    newvolume=200
-    engine.setProperty('volume', newvolume)
+# Save the audio to a file
+engine.save_to_file(full_text, "pdf_audio.mp3")
 
+# Run the engine
+engine.runAndWait()
 
-    engine.say(page_content)
+# Close the PDF file
+pdf_file.close()
 
-    #run and wait method to process voice command 
-    engine.save_to_file(page_content , "pdf_audio.mp3")
-    engine.runAndWait()
-    engine.stop()
-
-
-
-
-
+print("The PDF has been converted to audio and saved as 'pdf_audio.mp3'.")
