@@ -1,49 +1,48 @@
-# CodeAlpha_Tasks 
+#**CodeAlpha_Tasks**
 This repository showcases my internship projects, where I've applied my programming skills to solve real-world problems. Each project includes a detailed description, code, and documentation.
 
+#**Project Overview:**
 
-**Description:**
+This repository contains a collection of Python projects that demonstrate various programming concepts and techniques.
 
-This repo contains 3 projects:
+#**Projects Included:**
 
-1. **Hangman Game:** A classic word-guessing game implemented using Python.
-2. **PDF Text-to-Speech:** Converts text extracted from PDF files into audio using `pyttsx3`.
+**Hangman:** A classic word guessing game implemented using Python's Tkinter library.
+**PDF Text to Audio:** A script that converts text from PDF files into audio using the PyPDF2 and pyttsx3 libraries.
+**Chatbot:** A simple chatbot built using the NLTK library for natural language processing.
+**File Organizer:** A tool that organizes files in a specified directory based on their extensions.
 
-**Installation:**
+#**Installation Instructions:**
 
-1. **Install Python:** Ensure you have Python 3.6 or later installed.
-2. **Install required libraries:** Use pip to install the necessary libraries:
+To run these projects, you'll need Python installed on your system. You may also need to install additional libraries depending on the specific project:
 
-   ```bash
-   pip install pyttsx3 PyPDF2
-   ```
+**Hangman:** tkinter
+**PDF Text to Audio:** PyPDF2, pyttsx3
+**Chatbot:** NLTK
+File Organizer: No additional libraries required
+You can install these libraries using pip:
 
-**Usage:**
+Bash
+pip install tkinter PyPDF2 pyttsx3 nltk
+Use code with caution.
 
-1. **Hangman Game:**
-   - Run the `# Hangman in Python.py` script.
-   - Follow the on-screen prompts to play the game.
+#**Usage:**
 
-2. **PDF Text-to-Speech:**
-   - Run the `Autmation with python (converting PDF to audiobook).py` script.
-   - Provide the path to your PDF file as input.
-   - The script will extract text from the PDF and convert it to audio.
+**Hangman:**
+Clone the repository and navigate to the hangman directory.
+Run the hangman.py file.
 
-**Customization:**
+**PDF Text to Audio:**
+Clone the repository and navigate to the pdf_to_audio directory.
+Run the pdf_to_audio.py file and enter the path to the PDF file you want to convert.
 
-- **Hangman:** Adjust game parameters like word lists, maximum attempts, or difficulty levels.
-- **PDF Text-to-Speech:** Customize audio settings (speed, volume, voice) and output file format.
+**Chatbot:**
+Clone the repository and navigate to the chatbot directory.
+Run the chatbot.py file.
 
-**Contributing:**
+**File Organizer:**
+Clone the repository and navigate to the file_organizer directory.
+Run the file_organizer.py file and enter the path to the directory you want to organize.
+Contributing
 
-Contributions are welcome! Feel free to fork the repository and submit pull requests.
-
-
-
-**Additional Notes:**
-
-- Ensure you have the `pyttsx3` and `PyPDF2` libraries installed for both scripts.
-- Customize the file paths and settings in the scripts to match your specific requirements.
-- Consider adding more features or improvements to both the Hangman game and the PDF-to-audio functionality.
-
-**Enjoy playing Hangman and listening to your PDFs!**
+Contributions to this repository are welcome! Please feel free to fork the repository, make your changes, and submit a pull request.
