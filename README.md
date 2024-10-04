@@ -41,19 +41,19 @@ Use code with caution.
 ---
 1. ### **Hangman:**
 Clone the repository and navigate to the hangman directory.
-Run the hangman.py file.
+Run the `Hangman game.py` file.
 
 2. ### **PDF Text to Audio:**
 Clone the repository and navigate to the pdf_to_audio directory.
-Run the pdf_to_audio.py file and enter the path to the PDF file you want to convert.
+Run the `PDF-Text-To-Audio (Automation with python).py` file and enter the path to the PDF file you want to convert.
 
 3. ### **Chatbot:**
 Clone the repository and navigate to the chatbot directory.
-Run the chatbot.py file.
+Run the `chatbot.py` file.
 
 4. ### **File Organizer:**
 Clone the repository and navigate to the file_organizer directory.
-Run the file_organizer.py file and enter the path to the directory you want to organize.
+Run the `file organizer (Automation with python ).py` file and enter the path to the directory you want to organize.
 
 ## **Contributing:**
 ---
