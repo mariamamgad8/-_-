@@ -22,10 +22,14 @@ This repository contains a collection of Python projects that demonstrate variou
 ---
 To run these projects, you'll need Python installed on your system. You may also need to install additional libraries depending on the specific project:
 
-1. ### **Hangman:** tkinter
-2. ### **PDF Text to Audio:** PyPDF2, pyttsx3
-3. ### **Chatbot:** NLTK
-4. ### File Organizer: No additional libraries required
+1. ### **Hangman:**
+    tkinter
+2. ### **PDF Text to Audio:**
+    PyPDF2, pyttsx3
+3. ### **Chatbot:**
+    NLTK
+4. ### File Organizer:
+    No additional libraries required
 
 > ## **You can install these libraries using pip:**
 ```bash 
