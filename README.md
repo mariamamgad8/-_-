@@ -9,10 +9,14 @@ This repository contains a collection of Python projects that demonstrate variou
 ## **Projects Included:**
 ---
 
-1. ### **Hangman:** A classic word guessing game implemented using Python's Tkinter library.
-2. ### **PDF Text to Audio:** A script that converts text from PDF files into audio using the PyPDF2 and pyttsx3 libraries.
-3. ### **Chatbot:** A simple chatbot built using the NLTK library for natural language processing.
-4. ### **File Organizer:** A tool that organizes files in a specified directory based on their extensions.
+1. ### **Hangman:**
+    A classic word guessing game implemented using Python's Tkinter library.
+2. ### **PDF Text to Audio:**
+    A script that converts text from PDF files into audio using the PyPDF2 and pyttsx3 libraries.
+3. ### **Chatbot:**
+    A simple chatbot built using the NLTK library for natural language processing.
+4. ### **File Organizer:**
+    A tool that organizes files in a specified directory based on their extensions.
 
 ## **Installation Instructions:**
 ---
